@@ -1,54 +1,23 @@
 # ps-banking
-Compatible with QBCore and ESX.
+兼容 QBCore 和 ESX。
 
-# Depedency
-1. [qb-core](https://github.com/qbcore-framework/qb-core) or [ESX](https://github.com/esx-framework)
+# 依赖
+1. [qb-core](https://github.com/qbcore-framework/qb-core) 或 [ESX](https://github.com/esx-framework)
 2. [ox_lib](https://github.com/overextended/ox_lib)
 
-# Installation
-* Download release files.
-* Drag and drop resource into your server files.
-* Start resource through server.cfg.
-* Add the ps-banking sql file to your database.
-* Restart your server.
+# 安装
+* 下载发布文件。
+* 将资源拖放到服务器文件中。
+* 通过 server.cfg 启动资源。
+* 将 ps-banking 的 SQL 文件添加到数据库中。
+* 重启服务器。
 
-## Exports
-
-### Create Bill
-```bash
-    # Creates a bill invoice in the bank
-    exports["ps-banking"]:createBill({
-        identifier = "HVZ84591", -- citizen id
-        description = "Utility Bill", 
-        type = "Expense",
-        amount = 150.00,
-    })
-```
-
-# Features
-### Overview Tab:
-Includes all essential features such as managing your bills, withdrawing all money, depositing cash, transferring money weekly via Simmy, viewing the latest transactions, and handling unpaid invoices.
-![image](https://github.com/user-attachments/assets/7f22afa7-f4d8-427a-b9eb-42ef8b660801)
-
-### Bills
-Enables you to send and receive bills.
-![image](https://github.com/user-attachments/assets/6d51ffb3-992c-4032-986c-c033c694302a)
-
-### History
-Displays a history of all transactions with options to delete specific transactions.
-![image](https://github.com/user-attachments/assets/7beabc27-304a-402b-89e4-7d338140e498)
-
-### Stats and Reports
-Provides a summary of all transactions made, including total amounts, current balance, and transaction trends by date and amount.
-![image](https://github.com/user-attachments/assets/879f0a59-818d-4a4e-a204-c1be4fc22057)
-
-### Accounts
-Allows you to create, add, or remove accounts, rename accounts, and perform deposits or withdrawals from specific accounts.
-![image](https://github.com/user-attachments/assets/3ec1d109-1346-4148-aa17-f869972f2001)
-
-### ATM Access
-Deposit and withdraw from ATMs.
-![image](https://github.com/user-attachments/assets/49c135aa-295c-40ed-aa15-962a939e36ae)
-
-# Credits
-* [BachPB](https://github.com/BachPB)
+# 功能
+### 概览标签：
+只兼用qb-target
+![image](https://cdn.discordapp.com/attachments/1309071886860156938/1332019149211177081/image.png?ex=6793bb00&is=67926980&hm=aceaa5f5067ab2278f02c8495ab676f04dae0088caa1a5706606ae279068a586&)
+# 漢化展示
+### 概览标签：
+我將原本的文件中en.json裏面修改成繁體中文
+![image](https://cdn.discordapp.com/attachments/1309071886860156938/1332019449947230405/image.png?ex=6793bb48&is=679269c8&hm=34c9cda3dc4c313a69823079cad4e656eec9ed4990f7944d92c012d9c638bf8e&)
+![image](https://cdn.discordapp.com/attachments/1309071886860156938/1332019787383050390/image.png?ex=6793bb99&is=67926a19&hm=8bae463d7d12df9ea3df0a3e70494cdc203da360246b9fc0567fea284495d446&)
